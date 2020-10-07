@@ -14,6 +14,7 @@ public class CanvasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("Canvas Activity");
         String chosenColor = getIntent().getStringExtra("color");
         TextView tv;
         setContentView(R.layout.activity_canvas);
