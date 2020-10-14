@@ -74,6 +74,32 @@ public class CustomAdapter extends BaseAdapter {
             color.setBackgroundColor(Color.YELLOW);
         }
 
+        //French
+        if (chosenColor.equals("Rouge")) {
+            color.setBackgroundColor(Color.RED);
+
+        }
+        if (chosenColor.equals("Bleu")) {
+            color.setBackgroundColor(Color.BLUE);
+
+        }
+        if (chosenColor.equals("Noire")) {
+            color.setBackgroundColor(Color.BLACK);
+            color.setTextColor(Color.WHITE);
+        }
+        if (chosenColor.equals("Vert")) {
+            color.setBackgroundColor(Color.GREEN);
+
+        }
+        if (chosenColor.equals("Blanc")) {
+            color.setBackgroundColor(Color.WHITE);
+
+        }
+        if (chosenColor.equals("Jaune")) {
+            color.setBackgroundColor(Color.YELLOW);
+
+        }
+
         return view;
     }
 }

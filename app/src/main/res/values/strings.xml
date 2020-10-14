@@ -3,4 +3,17 @@
     <string name="tutorial">Click a color on the palette to change the color of the canvas</string>
     <string name="pActivity">Palette Activity</string>
     <string name="cActivity">Canvas Activity</string>
+
+    <string-array name="colorsArr">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Black</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>LTGray</item>
+        <item>Magenta</item>
+        <item>White</item>
+        <item>Yellow</item>
+        <item>DKGray</item>
+    </string-array>
 </resources>

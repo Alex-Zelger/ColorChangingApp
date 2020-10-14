@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application de changement de couleur</string>
+    <string name="tutorial">Cliquez sur une couleur de la palette pour changer la couleur de la toile</string>
+    <string name="pActivity">Activité de la palette</string>
+    <string name="cActivity">Activité de toile</string>
+
+    <string-array name="colorsArr">
+        <item>Rouge</item>
+        <item>Bleu</item>
+        <item>Noire</item>
+        <item>Cyan</item>
+        <item>LTGray</item>
+        <item>Vert</item>
+        <item>Magenta</item>
+        <item>Blanc</item>
+        <item>Jaune</item>
+        <item>DKGray</item>
+    </string-array>
+</resources>

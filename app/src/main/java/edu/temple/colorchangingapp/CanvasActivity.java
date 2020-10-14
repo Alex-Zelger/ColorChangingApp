@@ -14,7 +14,7 @@ public class CanvasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("Canvas Activity");
+        getSupportActionBar().setTitle(getResources().getString(R.string.cActivity));
         String chosenColor = getIntent().getStringExtra("color");
         TextView tv;
         setContentView(R.layout.activity_canvas);
@@ -60,6 +60,32 @@ public class CanvasActivity extends AppCompatActivity {
 
         }
         if (chosenColor.equals("Yellow")) {
+            main.setBackgroundColor(Color.YELLOW);
+
+        }
+
+        //French
+        if (chosenColor.equals("Rouge")) {
+            main.setBackgroundColor(Color.RED);
+
+        }
+        if (chosenColor.equals("Bleu")) {
+            main.setBackgroundColor(Color.BLUE);
+
+        }
+        if (chosenColor.equals("Noire")) {
+            main.setBackgroundColor(Color.BLACK);
+            tv.setTextColor(Color.WHITE);
+        }
+        if (chosenColor.equals("Vert")) {
+            main.setBackgroundColor(Color.GREEN);
+
+        }
+        if (chosenColor.equals("Blanc")) {
+            main.setBackgroundColor(Color.WHITE);
+
+        }
+        if (chosenColor.equals("Jaune")) {
             main.setBackgroundColor(Color.YELLOW);
 
         }
