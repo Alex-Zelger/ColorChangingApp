@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:label="@string/cActivity"
-    tools:context="edu.temple.colorchangingapp.CanvasActivity">
+    tools:context="edu.temple.colorchangingapp.CanvasFragment">
 
     <TextView
         android:id="@+id/canvasTV"

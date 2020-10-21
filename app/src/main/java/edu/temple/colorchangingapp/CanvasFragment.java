@@ -1,26 +1,22 @@
 package edu.temple.colorchangingapp;
-
-
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
 
-public class CanvasActivity extends AppCompatActivity {
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle(getResources().getString(R.string.cActivity));
+public class CanvasFragment extends Fragment {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         String chosenColor = getIntent().getStringExtra("color");
         TextView tv;
         setContentView(R.layout.activity_canvas);
         tv = (TextView) findViewById(R.id.canvasTV);
         tv.setText(chosenColor);
-        ConstraintLayout main = (ConstraintLayout) findViewById(R.id.main_layout);
+        View main = inflater.inflate(R.layout.activity_canvas, container, false);
 
         //Set Background color
         if (chosenColor.equals("Red")) {
@@ -89,5 +85,8 @@ public class CanvasActivity extends AppCompatActivity {
             main.setBackgroundColor(Color.YELLOW);
 
         }
+
+
+        return main;
     }
 }
